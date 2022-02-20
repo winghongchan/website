@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Sharp');
+
+html {
+  scrollbar-color: darkgray black;
+}
+
+body {
+  font-family: 'Work Sans', 'Lato', 'Calibri', 'Cantarell', 'Segoe', 'DejaVu Sans', 'Verdana', sans-serif;
+  margin: 0;
+  scrollbar-color: lightgray transparent;
+}
+
+abbr {
+  -webkit-text-decoration: underline;
+  text-decoration: underline dotted;
+  transition: all 0.5s ease;
+}
+abbr:hover {
+  background-color: white;
+  box-shadow: 0 0 10px white;
+  box-sizing: padding-box;
+  color: darkslategray;
+  transition: all 0.1s ease;
+}
+@media (hover: none) and (pointer: coarse) /* This one’s for the touchscreen users who cannot “hover” to view tooltips */ {
+  abbr[title=English]:hover::after {
+    content: " (English)";
+  }
+  abbr[title=Philosophy\:\ Questions\ and\ Theories]:hover::after {
+    content: " (Philosophy: Questions and Theories)";
+  }
+  abbr[title=Music]:hover::after {
+    content: " (Music)";
+  }
+  abbr[title=Advanced\ Functions]:hover::after {
+    content: " (Advanced Functions)";
+  }
+  abbr[title=Calculus\ and\ Vectors]:hover::after {
+    content: " (Calculus and Vectors)";
+  }
+  abbr[title=Biology]:hover::after {
+    content: " (Biology)";
+  }
+  abbr[title=Chemistry]:hover::after {
+    content: " (Chemistry)";
+  }
+  abbr[title=Physics]:hover::after {
+    content: " (Physics)";
+  }
+}
+
+#logobox, 
+nav {
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+  transition: background-color 1s ease, box-shadow 1s ease;
+  -webkit-user-select: none; user-select: none; 
+  width: 60px;
+  z-index: 2;
+}
+@supports (backdrop-filter: blur(10px)) {
+  #logobox,
+  nav {
+    backdrop-filter: blur(10px);
+    background-color: #fffc;
+  }
+}
+@supports (-webkit-backdrop-filter: blur(10px)) {
+  #logobox,
+  nav {
+    -webkit-backdrop-filter: blur(10px);
+    background-color: #fffc;
+  }
+}
+
+#logobox:hover, 
+nav:hover {
+  background-color: white;
+  box-shadow: 0 0 10px lightgray;
+  transition: all 0.1s ease;
+}
+
+#logobox {
+  display: block;
+  height: 60px;
+  margin-bottom: 20px;
+  position: fixed; 
+}
+#logobox img {
+  margin: 10px;
+  -webkit-user-select: none; user-select: none; 
+  width: 40px;
+}
+
+nav {
+  display: block;
+  position: fixed;
+  float: top;
+  margin-top: 110px;
+}
+
+nav .material-icons-sharp {
+  color: gray;
+  display: block;
+  font-family: 'Material Icons Sharp';
+  line-height: 60px;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  -webkit-user-select: none; user-select: none !important; 
+  white-space: nowrap;
+}
+nav .material-icons-sharp:hover {
+  color: black;
+  filter: drop-shadow(0 0 10px #fff);
+  transition: all 0.1s ease;
+}
+
+#main {
+  overflow-x: hidden;
+}
+
+h1 {
+  background-color: white;
+  box-sizing: border-box;
+  color: black;
+  font-family: 'Archivo Narrow', sans-serif;
+  padding: 27px 20px 10px 100px;
+  margin: 0;
+  min-height: 90px;
+  overflow: auto;
+}
+
+h2 {
+  margin: 0;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -110px;
+  visibility: hidden;
+}
+
+.slidebg {
+  padding: 20px 0;
+}
+
+.bigslide {
+  min-height: calc(100vh - 130px);
+}
+
+.slidetop {
+  backdrop-filter: blur(7px);
+  background-color: #fff;
+  border-radius: 10px;
+  color: black;
+  margin: 0 20px 20px 100px;
+  padding: 10px;
+  max-width: calc(6.5in + 20px);
+}
+
+.slidein {
+  -webkit-backdrop-filter: blur(8px); 
+  background-color: #e0e5ea;
+  border-radius: 10px;
+  font-weight: normal; /*for some reason this is necessary on GNOME Web.*/
+  margin: 20px 20px 20px 100px;
+  max-width: calc(6.5in + 20px);
+  padding: 10px;
+}
+@supports (backdrop-filter: blur(10px)) {
+  .slidein {
+    backdrop-filter: blur(10px);
+    background-color: #fffd;
+  }
+}
+@supports (-webkit-backdrop-filter: blur(10px)) {
+  .slidein {
+    -webkit-backdrop-filter: blur(10px);
+    background-color: #fffd;
+  }
+}
+
+.slidein img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.slidein button {
+  background-color: white;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  color: darkslategray;
+  font: bold 16px 'Work Sans', 'Lato', 'Carlito', 'Calibri', 'Cantarell', sans-serif;
+  padding: 10px;
+  transition: all 0.25s ease;
+}
+.slidein button:hover, 
+.slidein button:focus {
+  border-color: lightslategray;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+.slidein button:active {
+  background-color: #2f4f4f20;
+}
+
+.slidecap {
+  backdrop-filter: blur(7px);
+  background-color: #212121d0;
+  border-radius: 15px;
+  color: lightgray;
+  margin: 20px 20px 0 100px;
+  padding: 10px;
+  max-width: calc(6.5in + 20px);
+}
+.slidecap a {
+  color: cornflowerblue;
+}
+
+.mergeup {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-top: 0;
+}
+
+.mergedn {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-bottom: 0;
+}
+
+.gallery {
+  box-sizing: border-box;
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 20px;
+  grid-template-columns: repeat(3, max-content);
+  grid-template-rows: repeat(2, max-content);
+  overflow: auto;
+  padding: 0 20px 20px 100px;
+  scrollbar-color: white transparent;
+  scroll-snap-type: x mandatory;
+  scroll-snap-stop: always;
+  scroll-padding-inline-start: 120px;
+  scroll-padding-inline-end: 20px;
+  width: 100vw;
+}
+.gallery .slidein {
+  background-color: #f8f9fa;
+  margin: 0;
+  scroll-snap-align: start;
+  width: calc(3.25in + 20px);
+  max-width: calc(100vw - 160px);
+}
+.gallery .slidein:last-of-type {
+  scroll-snap-align: end;
+}
+
+.slidebg.about-me {
+  background-color: lightslategray;
+  background-image: url("IMG_5907.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
+  .about-me>.slidein {
+    background-color: #d8e6ecc0;
+  }
+}
+
+.slidebg.work {
+  background-color: #2e3a50;
+  background-image: url("Chan Stair T-T.svg");
+  background-position: center;
+  background-repeat: repeat;
+}
+.work>.slidein {
+  background-color: #e0e5ea;
+}
+@supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(8px)) {
+  .work>.slidein {
+    background-color: #d8e6ecc0;
+  }
+}
+
+#about {
+  background-color: lightgray;
+}
+
+@media only screen {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (min-width: calc(3.25in + 121px)) {
+  #menubutton {
+    display: none;
+  }
+}
+
+@media screen and (max-width: calc(3.25in + 120px)) /* Phones */ {
+  #logobox {
+    margin: 10px 0 0 10px;
+  }
+  nav {
+    bottom: 0;
+    margin: 0 0 10px 10px;
+  }
+  nav .material-icons-sharp.menuitem {
+    display: none;
+  }
+  h1 {
+    min-height: 75px;
+    padding: 17px 10px 5px 80px;
+  }
+  .bigslide {
+    min-height: calc(100vh - 115px);
+  }
+  a.anchor {
+    top: -80px;
+  }
+  .slidetop, 
+  .slidein, 
+  .slidecap {
+    margin-left: 20px;
+  }
+  .gallery {
+    margin: 0;
+    padding-left: 20px;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    scroll-padding-inline-start: 20px;
+    scroll-padding-inline-end: 20px;
+  }
+  .gallery .slidein {
+    scroll-snap-align: center;
+    width: calc(100vw - 80px);
+    max-width: none;
+  }
+}

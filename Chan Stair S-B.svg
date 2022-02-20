@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80">
+	<!-- All polygon points are drawn clockwise from top left -->
+	<!-- C -->
+    <polygon points="11,11 49,11 49,29 29,29 29,49 11,49" fill="black" />
+    <!-- W (from left to right) -->
+	<polygon points="12.41421,51 29.58579,51 47.58579,69 30.41421,69" fill="black" />
+    <polygon points="31,32.41421 49,50.41421 49,67.58579 31,49.58579" fill="black" />
+    <polygon points="32.41421,31 49.58579,31 67.58579,49 50.41421,49" fill="black" />
+    <polygon points="51,12.41421 69,30.41421 69,47.58579 51,29.58579" fill="black" />
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="100">
+    <!-- Back edges of stairs, bottom left to top right -->
+    <polyline points="0,60 0,100 40,100" style="fill: none; stroke: white; stroke-width: 1" />
+    <polyline points="0,0 40,0 40,40 80,40 80,80 120,80 120,100" style="fill: none; stroke: white; stroke-width: 1" />
+    <polyline points="120,0 120,20 160,20 160,60 200,60 200,100" style="fill: none; stroke: white; stroke-width: 1" />
+    <!-- Side edges of stairs -->
+    <polyline points="0,40 0,60 20,60 20,80 40,80 40,100" style="fill: none; stroke: white; stroke-width: 1" />
+    <polyline points="0,0 0,20 20,20 20,40 40,40 40,60 60,60 60,80 80,80 80,100 100,100" style="fill: none; stroke: white; stroke-width: 1" />
+    <polyline points="40,0 60,0 60,0 60,20 80,20 80,40 100,40 100,60 120,60 120,80 140,80 140,100 160,100" style="fill: none; stroke: white; stroke-width: 1" />
+    <polyline points="80,0 100,0 100,0 100,20 120,20 120,40 140,40 140,60 160,60 160,80 180,80 180,100 200,100" style="fill: none; stroke: white; stroke-width: 1" />
+    <polyline points="140,0 160,0 160,0 160,20 180,20 180,40 200,40 200,60" style="fill: none; stroke: white; stroke-width: 1" />
+    <polyline points="180,0 200,0 200,20" style="fill: none; stroke: white; stroke-width: 1" />
+    <!-- Leading edges of stairs, by staircase, going down -->
+    <line x1="0" y1="40" x2="20" y2="20" style="stroke: white; stroke-width: 1" />
+    <line x1="0" y1="60" x2="20" y2="40" style="stroke: white; stroke-width: 1" />
+    <line x1="20" y1="60" x2="40" y2="40" style="stroke: white; stroke-width: 1" />
+    <line x1="20" y1="80" x2="40" y2="60" style="stroke: white; stroke-width: 1" />
+    <line x1="40" y1="80" x2="60" y2="60" style="stroke: white; stroke-width: 1" />
+    <line x1="40" y1="100" x2="60" y2="80" style="stroke: white; stroke-width: 1" />
+    <line x1="60" y1="100" x2="80" y2="80" style="stroke: white; stroke-width: 1" />
+    <!-- Leading edges of second staircase -->
+    <line x1="60" y1="20" x2="80" y2="0" style="stroke: white; stroke-width: 1" />
+    <line x1="80" y1="20" x2="100" y2="0" style="stroke: white; stroke-width: 1" />
+    <line x1="80" y1="40" x2="100" y2="20" style="stroke: white; stroke-width: 1" />
+    <line x1="100" y1="40" x2="120" y2="20" style="stroke: white; stroke-width: 1" />
+    <line x1="100" y1="60" x2="120" y2="40" style="stroke: white; stroke-width: 1" />
+    <line x1="120" y1="60" x2="140" y2="40" style="stroke: white; stroke-width: 1" />
+    <line x1="120" y1="80" x2="140" y2="60" style="stroke: white; stroke-width: 1" />
+    <line x1="140" y1="80" x2="160" y2="60" style="stroke: white; stroke-width: 1" />
+    <line x1="140" y1="100" x2="160" y2="80" style="stroke: white; stroke-width: 1" />
+    <line x1="160" y1="100" x2="180" y2="80" style="stroke: white; stroke-width: 1" />
+    <!-- Leading edges of third staircase -->
+    <line x1="160" y1="20" x2="180" y2="0" style="stroke: white; stroke-width: 1" />
+    <line x1="180" y1="20" x2="200" y2="0" style="stroke: white; stroke-width: 1" />
+    <line x1="180" y1="40" x2="200" y2="20" style="stroke: white; stroke-width: 1" />
+</svg>

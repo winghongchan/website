@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Wing Hong Chan</title>
+    <link rel="icon" type="image/x-icon" href="WingHong4.png">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <aside>
+      <a href="#top" id="logobox">
+        <img alt="Wing Hong Chan’s logo, which consists of the initials C W merged into what resembles a staircase." src="Chan Stair S-B.svg">
+      </a>
+      <nav>
+        <a class="material-icons-sharp menuitem" href="#about-me">
+          home
+        </a>
+        <a class="material-icons-sharp menuitem" href="#work">
+          build
+        </a>
+        <!--<a class="material-icons-sharp menuitem" href="#resume">
+        description
+        </a>
+        <a class="material-icons-sharp menuitem" href="#social-media">
+          contact_mail 
+        </a>
+        <a class="material-icons-sharp menuitem" href="#about">
+          info 
+        </a>
+        <a class="material-icons-sharp menuitem" href="#darkmode">
+          brightness_6 
+        </a>-->
+        <a class="material-icons-sharp" id="menubutton" onclick="toggleMenu()">
+          menu 
+        </a>
+      </nav>
+    </aside>
+
+    <div id="main">
+      <header>
+        <h1>
+          Wing Hong Chan
+        </h1>
+      </header>
+
+      <div class="slidebg bigslide about-me">
+        <a class="anchor" id="about-me"></a>
+        <div class="slidetop mergedn">
+          <h2>
+            Good hellos!
+          </h2>
+        </div>
+        <div class="slidein mergeup">
+          I am a student in 12<sup>th</sup> grade at St. Robert Catholic High School. I took <abbr title="English">ENG4U</abbr>, <abbr title="Philosophy: Questions and Theories">HZT4U</abbr>, <abbr title="Music">AMU4M</abbr>, and <abbr title="Advanced Functions">MHF4U</abbr>; and am now taking <abbr title="Calculus and Vectors">MCV4U</abbr>, <abbr title="Biology">SBI4U</abbr>, <abbr title="Chemistry">SCH4U</abbr>, and <abbr title="Physics">SPH4U</abbr> later this year.
+          <br><br>
+          In my free time I code and design and read up on meteorology, cattle, typography, and other topics of interest. I also watch videos about tech, design and engineering. 
+        </div>
+      </div>
+      
+      <div class="slidebg bigslide work">
+        <a class="anchor" id="work"></a>
+        <div class="slidetop mergedn">
+          <h2>
+            Work
+          </h2>
+        </div>
+        <div class="slidein mergeup">
+          I always find room to improve the things I make. Here are my projects where I believe that I have satisfied the goal. 
+        </div>
+
+        <div class="gallery">
+          <div class="slidein mergedn" id="work0" onclick="document.getElementById('work0').scrollIntoView({behavior: 'smooth'})">
+            <img alt="Screenshot of a game of sudoku played in a computer terminal. It is largely incomplete, and displays the given numbers in white, four dots in one cell, a blue number 5 in another, a cell highlighted in blue and a number in the same column in red, which contains the same number as the one in the highlighted cell." src="Screenshot_20220108_124425.png">
+            <h3>
+              C# Sudoku in the console
+            </h3>
+            Before making websites, all my programs were used in the console. This game of sudoku contains clear visuals, WASD key navigation, and error checking to try out on three playable boards. 
+          </div>
+          <div class="slidein mergeup">
+            <a href="https://replit.com/@WingHongChan/Sudoku?v=1" target="_blank"><button>Play on Replit</button></a>
+          </div>
+          
+          <div class="slidein mergedn" id="work1" onclick="document.getElementById('work1').scrollIntoView({behavior: 'smooth'})">
+            <img alt="Screenshot of a game of hangman. The letters e, r, I, m, and a were guessed correctly, while the q, p, and t were incorrect." src="Screenshot_20220108_125026.png">
+            <h3>
+              JS Two-person Hangman
+            </h3>
+            A simple website where one person decides on a word to guess, and the player guesses letter-by-letter - like it goes on a classroom blackboard. 
+          </div>
+          <div class="slidein mergeup">
+            <a href="https://aaghmnn-Hangman.winghongchan.repl.co" target="_blank"><button>Play</button></a>
+          </div>
+          
+          <div class="slidein mergedn" id="work2" onclick="document.getElementById('work2').scrollIntoView({behavior: 'smooth'})">
+            <img alt="The Google Docs online interface using a dark color scheme." src="Screenshot_20220108_130113.png">
+            <h3>
+              CSS Dark Docs
+            </h3>
+            My first open-source project, a dark mode for the Google Docs online interface. It was built out of necessity for working long hours on essays, and it is continuously developed as Google continues to add features. 
+          </div>
+          <div class="slidein mergeup">
+            <a href="https://github.com/winghongchan/dark-docs" target="_blank"><button>View on Github</button></a>
+          </div>
+        </div>
+      </div>
+      <!--<div class="slidebg" id="about">
+        <div class="slidein">
+          <h2>
+            About this site
+          </h2>
+          <p>
+            This is my website, made with HTML and CSS and no website builder. Its one-page design was inspired by a <a href="http://web.archive.org/web/20200201113301/https://texas.gov/">former version of texas.gov</a>, a (loosely) one-page website. I appreciated the concept and built upon it here.
+          </p>
+        </div>-->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
