@@ -312,7 +312,13 @@ a.anchor {
   }
   nav {
     bottom: 0;
+    height: 60px;
     margin: 0 0 10px 10px;
+    overflow: hidden;
+    transition: height 0.1s ease;
+  }
+  nav:focus-within {
+    height: 180px;
   }
   nav .material-icons-sharp.menuitem {
     display: none;
