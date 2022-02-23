@@ -317,6 +317,9 @@ a.anchor {
   nav .material-icons-sharp.menuitem {
     display: none;
   }
+  nav:focus-within .material-icons-sharp.menuitem {
+    display: block !important;
+  }
   h1 {
     min-height: 75px;
     padding: 17px 10px 5px 80px;
