@@ -95,10 +95,26 @@ nav:hover {
 }
 
 nav {
+  animation-duration: 1s;
+  animation-name: menu_margin;
+  animation-timeline: menu_margin_timeline;
   display: block;
   position: fixed;
   float: top;
   margin-top: 110px;
+}
+
+@scroll-timeline menu_margin_timeline {
+  source: auto;
+  scroll-offsets: 0, 10px;
+}
+@keyframes menu_margin {
+  from {
+    margin-top: 110px;
+  }
+  to {
+    margin-top: 100px;
+  }
 }
 
 nav .material-icons-sharp {
@@ -243,13 +259,29 @@ a.anchor {
   grid-template-rows: repeat(2, max-content);
   overflow: auto;
   padding: 0 20px 20px 100px;
-  scrollbar-color: white transparent;
+  scrollbar-color: #f8f9fa transparent;
   scroll-snap-type: x mandatory;
   scroll-snap-stop: always;
   scroll-padding-inline-start: 120px;
   scroll-padding-inline-end: 20px;
   width: 100vw;
 }
+.gallery::-webkit-scrollbar {
+  height: 10px;
+}
+.gallery::-webkit-scrollbar-track {
+  border: 5px solid transparent;
+  padding: 5px;
+  margin-left: 100px;
+  margin-right: 20px;
+}
+.gallery::-webkit-scrollbar-thumb {
+  background-color: #f8f9fa;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  margin: 6px;
+}
+
 .gallery .slidein {
   background-color: #f8f9fa;
   margin: 0;
@@ -312,7 +344,13 @@ a.anchor {
   }
   nav {
     bottom: 0;
+    height: 60px;
     margin: 0 0 10px 10px;
+    overflow: hidden;
+    transition: height 0.1s ease;
+  }
+  nav:focus-within {
+    height: 180px;
   }
   nav .material-icons-sharp.menuitem {
     display: none;
